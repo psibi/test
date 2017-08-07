@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>My test page</title>
+    <script type="text/javascript">
+     function onClick(url) {
+       window.open(url);
+     }
+    </script>
   </head>
   <body>
     <p>This is my page</p>
@@ -13,5 +18,11 @@
     <a href="boxemm://file?id=205714632865">Click this</a>
     <p>Try opening boxemm</p>
     <a href="boxemm://">Click this</a>
+    <div id="id1" onclick="onClick('boxemm://')">
+      Click me to open the app
+    </div>
+    <div id="id2" onclick="onClick('boxemm://file?id=205714632865')">
+      Click me to open the file
+    </div>
   </body>
 </html>
